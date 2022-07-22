@@ -1,0 +1,14 @@
+.flashsale-fluid {
+    background: #fcf4eb;
+    padding-bottom: 30px;
+}
+
+.all-flashsale {
+    --background-color: #ffc700;
+    --countdown-background: #ff4949;
+    --countdown-color: #ffffff;
+    background: var(--background-color, transparent);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: unset;
+}

@@ -1,0 +1,93 @@
+.title_page {
+    font-size: 1.75rem;
+    padding: 10px 0;
+}
+
+.title-head {
+    font-size: 1rem;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.title_page,
+.title-head {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+.item_product_main .product-thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.item_product_main .image_thumb {
+    display: block;
+}
+
+
+
+.item_product_main .price-contact,
+.item_product_main .price {
+    font-weight: bold;
+    color: var(--price-color);
+}
+
+.item_product_main .compare-price {
+    color: var(--text-secondary-color);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+
+
+
+.heading-bar {
+    font-size: 16px;
+    background: #fff;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.heading-bar__title {
+    font-family: var(--font-serif);
+    color: var(--text-color);
+    font-size: 1.6em;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.item_product_main {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+    .item_product_main {
+        font-size: 16px;
+    }
+}
+
+.item_product_main a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.btn-main {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-main:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+    .col-md-15 {
+        max-width: 20%;
+        flex: 0 0 20%;
+    }
+}

@@ -1,0 +1,274 @@
+@import './header.css';
+@import './footer.css';
+@import './global.css';
+@import './home.css';
+@import './product.css';
+@import './product-detail.css';
+@import './flashsale.css';
+@import './blogs.css';
+@import './blog-detail.css';
+@import './event.css';
+@import './location.css';
+@import './introduce.css';
+@import './contact.css';
+
+:root {
+	--text-color: #3a445e;
+	--text-secondary-color: #666666;
+	--primary-color: #008848;
+	--secondary-color: #ffc107;
+	--price-color: #f3283d;
+	--topbar-bg: #fdd835;
+	--topbar-color: #000000;
+	--header-background: #fff;
+	--header-color: var(--text-color);
+	--label-background: #e2544a;
+	--label-color: #ffffff;
+	--main-menu-bg: #008848;
+	--main-menu-color: #ffffff;
+	--footer-bg: #0a472e;
+	--footer-color: #ffffff;
+	--show-loadmore: none !important;
+	--order-loadmore: -1 !important;
+}
+
+html {
+	scroll-behavior: smooth;
+	/* scroll-snap-type: y proximity; */
+}
+
+body {
+	--font-serif: 'Yeseva One', cursive;
+	color: var(--text-color);
+	background: var(--body-color, #fff);
+	overflow-x: hidden;
+	max-width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container-hg {
+	max-width: 90vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+section {
+	scroll-snap-align: start;
+	scroll-snap-stop: normal;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+	.section {
+		margin-bottom: 10px;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: var(--text-color);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* CSS Global  */
+a.link {
+	text-decoration: none;
+	color: var(--text-color);
+	cursor: pointer;
+}
+
+a.link:hover {
+	color: var(--primary-color);
+	filter: brightness(0.9);
+	text-decoration: none;
+}
+
+.btn-action {
+	background-color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
+}
+
+.btn-action:hover {
+	filter: brightness(1.1);
+}
+
+.lazyload:not(.loaded) {
+	background: #ebebeb;
+}
+
+
+
+
+/* --------------------------------------- */
+
+/* Swiper  */
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.swiper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	--size: 44px;
+	top: 50%;
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	display: block;
+	width: var(--size);
+	height: var(--size);
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	border: 1px solid #ebebeb;
+	background: #ebebeb;
+	line-height: var(--size);
+	text-align: center;
+	z-index: 1;
+	overflow: hidden;
+	opacity: .7;
+	border-radius: 100%;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+	font-family: "Font Awesome\ 5 Free";
+	background: transparent;
+	font-weight: 900;
+	height: var(--size);
+	width: var(--size);
+	font-size: 18px;
+	color: #333;
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+	opacity: 1;
+	box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+	background: #fff;
+	color: #333;
+}
+
+
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	border-color: var(--primary-color);
+	background-color: var(--primary-color);
+}
+
+.swiper-pagination {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	padding: 0;
+	border-radius: 15px;
+	height: 24px;
+	align-items: center;
+	display: flex !important;
+	justify-content: center;
+}
+
+.swiper-pagination-bullet {
+	height: 2px;
+	width: 16px;
+	border: 1px solid #fff;
+	background: #fff;
+	border-radius: 0;
+	margin: 0 3px;
+	opacity: .5;
+}
+
+
+/* ----------------------------------- */
+
+/* Animation  */
+@-moz-keyframes spin {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}

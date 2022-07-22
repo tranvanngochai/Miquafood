@@ -1,0 +1,132 @@
+/*  Header  */
+.mid-header {
+    background: var(--header-background);
+    color: var(--header-color);
+    padding: 10px 0px;
+}
+
+.mid-header .toggle-nav {
+    width: 24px;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    border-radius: 0px;
+}
+
+.mid-header .toggle-nav .bar {
+    height: 3px;
+    background: var(--text-color);
+    width: 24px;
+    border-radius: 1px;
+}
+
+.mid-header .toggle-nav .bar:nth-child(2) {
+    width: 75%;
+}
+
+.mid-header .logo-wrapper {
+    width: 110px;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .mid-header .logo-wrapper {
+        width: 70px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    #search-header {
+        order: 1;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+#search-header form {
+    border-radius: 50rem;
+}
+
+.custom-input-group {
+    overflow: hidden;
+    border-radius: 0.25rem;
+    position: relative;
+}
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    #search-header .custom-input-group .input-group-field {
+        height: 35px;
+    }
+}
+
+
+#search-header .custom-input-group .input-group-field {
+    background: #eee;
+}
+
+#search-header .btn:hover {
+    color: var(--primary-color);
+}
+
+
+.custom-input-group .input-group-field {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    background: transparent;
+    color: #363636;
+    outline: none;
+    padding: 0 50px 0 15px;
+    float: right;
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+
+.custom-input-group .input-group-btn,
+.custom-input-group .input-group-btn button {
+    border: none;
+}
+
+.custom-input-group .input-group-btn {
+    position: absolute;
+    right: 0px;
+    z-index: 4;
+    height: 100%;
+}
+
+.header-left {
+    color: black;
+}
+
+.hotline {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hotline i {
+    font-size: 30px;
+}
+
+.hotline a {
+    color: black;
+}

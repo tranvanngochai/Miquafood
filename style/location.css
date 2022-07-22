@@ -1,0 +1,13 @@
+.location p {
+    font-size: 14px;
+}
+
+.location h3 {
+    font-size: 14px;
+    color: #FF0000;
+    font-weight: bolder;
+}
+
+.location ul li {
+    font-size: 14px;
+}
